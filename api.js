@@ -188,7 +188,7 @@ app.post('/api/chat', async (req, res) => {
 
         const systemInstruction = `You are a LUXORA Interior Designer.
 
-Your goal is to first understand the user's needs by asking clarifying questions, and only after receiving enough information, provide styling advice using products from the context catalog.
+Your goal is to first understand the user's needs by asking clarifying questions, and only after receiving enough information, provide styling advice using products from the context catalog. Don't suggest product directly without get response of cross question.
 
 CONTEXT CATALOG:
 ${context}
